@@ -15,8 +15,8 @@
     "dev": "nodemon --exec \"NODE_ENV=development node --harmony index.js\"",
     "dev:tool": "devtool index.js --js-flags=\"NODE_ENV=development --harmony --inspect\" --watch",
     "updatedb": "node ./node_modules/geoip-lite/scripts/updatedb.js",
-    "publish:daily:nodepress": "node ./scripts/publish/index.js --daily --mode=nodepress",
-    "publish:online:nodepress": "node scripts/lib/affirmPublish.js --online &&node ./scripts/publish/index.js --online --mode=nodepress"
+    "publish:daily:node-api": "node ./scripts/publish/index.js --daily --mode=node-api",
+    "publish:online:node-api": "node scripts/lib/affirmPublish.js --online &&node ./scripts/publish/index.js --online --mode=node-api"
   },
   "dependencies": {
     "akismet-api": "^4.2.0",
