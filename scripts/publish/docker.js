@@ -19,8 +19,8 @@ module.exports = (host, mode, env = 'daily') => {
   const gitBranch = env === 'daily' ? 'master' : 'master';
 
   const commands = [
-    'cd /home/admin/deploy && git clone https://github.com/Maneng/node-service.git',
-    `cd /home/admin/deploy/node-service && git checkout ${gitBranch} &&  git pull &&git  reset --hard && git pull  && docker build ./ -t ${registry}:${v} && docker tag ${registry}:${v} ${registry}:latest && docker push ${registry}`,
+    'cd /home/admin/deploy && git clone https://github.com/Maneng/node-api.git',
+    `cd /home/admin/deploy/node-api && git checkout ${gitBranch} &&  git pull &&git  reset --hard && git pull  && docker build ./ -t ${registry}:${v} && docker tag ${registry}:${v} ${registry}:latest && docker push ${registry}`,
   ];
 
   let promise = Promise.resolve();
