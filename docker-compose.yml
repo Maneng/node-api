@@ -1,0 +1,14 @@
+
+
+service-node-game:
+  image: 127.0.0.1:5000/node-api:latest
+  container_name: node-api
+  restart: always
+  ports:
+    - 8080:8080
+  volumes:
+    - /etc/localtime:/etc/localtime:ro
+    - ./config/app.config.js:/workspace/app.config.js
+  environment:
+    SERVICE_8080_NAME: node-api
+    SERVICE_8080_TAGS: ha,daily
