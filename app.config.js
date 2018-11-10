@@ -7,11 +7,11 @@ exports.MONGODB = {
 };
 
 exports.QINIU = {
-	accessKey: argv.qn_accessKey || '',
-	secretKey: argv.qn_secretKey || '',
+	accessKey: argv.qn_accessKey || 'adcXzTBYWeo6nDFuqXjkxfKoPIG70yMqnnG5RVdG',
+	secretKey: argv.qn_secretKey || 'kiQ2sTiGJ4N36GjHEv_uaWl9rYMwT40nMq2qEI73',
 	bucket: argv.qn_bucket || 'blog',
-	origin: argv.qn_origin || '',
-	uploadURL: argv.qn_uploadURL || ''
+	origin: argv.qn_origin || 'http://pgc1r4dla.bkt.clouddn.com',
+	uploadURL: argv.qn_uploadURL || 'http://pgc1r4dla.bkt.clouddn.com'
 };
 
 exports.CROSS_DOMAIN = {
@@ -40,7 +40,7 @@ exports.ALIYUN = {
 
 exports.EMAIL = {
 	account: '643449856@qq.com',
-	password: ''
+	password: 'emqcmpgytpkfbfbc'
 };
 
 exports.AKISMET = {
@@ -58,7 +58,7 @@ exports.INFO = {
 	name: 'NodePress',
 	version: '2.0.0',
 	author: 'Surmon',
-	site: 'http://yyidan.top',
+	site: 'http://www.yyidan.top',
 	github: 'https://github.com/surmon-china',
 	powered: ['Vue', 'Nuxt.js', 'ReactNative', 'Angular', 'Bootstrap4', 'Nodejs', 'MongoDB', 'Express', 'Nginx']
 };
