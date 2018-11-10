@@ -4,7 +4,7 @@ function start(host, mode) {
   return exec('ssh',
     [
       `admin@${host}`,
-      `source ~/.bashrc && cd /home/admin/deploy/${mode}  && git pull && make`
+      `source ~/.bashrc && cd /home/admin/deploy/node-service/${mode}  && git pull && make`
     ]
   );
 }
