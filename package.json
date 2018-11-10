@@ -1,0 +1,59 @@
+{
+  "name": "nodepress",
+  "version": "2.1.0",
+  "description": "RESTful API server application for Surmon.me blog",
+  "private": false,
+  "author": {
+    "name": "Surmon",
+    "email": "surmon@foxmail.com",
+    "url": "https://surmon.me"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=production node --harmony index.js",
+    "lint": "eslint --ext .js --ignore-path .eslintignore .",
+    "dev": "nodemon --exec \"NODE_ENV=development node --harmony index.js\"",
+    "dev:tool": "devtool index.js --js-flags=\"NODE_ENV=development --harmony --inspect\" --watch",
+    "updatedb": "node ./node_modules/geoip-lite/scripts/updatedb.js",
+    "publish:daily:nodepress": "node ./scripts/publish/index.js --daily --mode=nodepress",
+    "publish:online:nodepress": "node scripts/lib/affirmPublish.js --online &&node ./scripts/publish/index.js --online --mode=nodepress"
+  },
+  "dependencies": {
+    "akismet-api": "^4.2.0",
+    "app-module-path": "^2.2.0",
+    "body-parser": "^1.18.3",
+    "colors": "^1.3.2",
+    "consola": "^1.4.3",
+    "express": "^4.16.3",
+    "geoip-lite": "^1.3.1",
+    "helmet": "^3.13.0",
+    "hiredis": "^0.5.0",
+    "js-base64": "^2.4.8",
+    "jsonwebtoken": "^8.3.0",
+    "marked": "^0.4.0",
+    "mongoose": "^5.3.2",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-paginate": "git+ssh://git@yyidan.top:10020/frank/mongoose-paginate.git",
+    "node.date-time": "^1.2.2",
+    "nodemailer": "^4.6.7",
+    "nodemon": "^1.18.4",
+    "qn": "^1.3.0",
+    "redis": "^2.8.0",
+    "request": "^2.87.0",
+    "simple-netease-cloud-music": "^0.3.4",
+    "sitemap": "^1.13.0",
+    "wonderful-bing-wallpaper": "^0.1.0",
+    "yargs": "^12.0.1"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "devtool": "^2.3.1",
+    "eslint": "^5.6.1",
+    "eslint-plugin-node": "^7.0.1",
+    "minimist": "^1.2.0",
+    "nodemon": "^1.18.4"
+  }
+}
