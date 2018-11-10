@@ -3,8 +3,8 @@ const colors = require('colors');
 const exec = require('../lib/exec');
 
 const dockerRegistry = {
-  daily: 'yyidan.top:5000',
-  online: 'yyidan.top:5000'
+  daily: '127.0.0.1',
+  online: '127.0.0.1'
 };
 
 module.exports = (host, mode, env = 'daily') => {
