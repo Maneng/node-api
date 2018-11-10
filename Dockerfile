@@ -8,6 +8,8 @@ RUN npm install yarn -g --registry=https://registry.npm.taobao.org
 RUN yarn --verbose
 COPY ./ ./
 RUN rm -rf ./config/*
+COPY ./config/app.config.js ./app.config.js
+
 EXPOSE 8080
 
-CMD node index.js
+CMD NODE_ENV=production node --harmony index.js
