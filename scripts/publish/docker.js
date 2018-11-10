@@ -3,8 +3,8 @@ const colors = require('colors');
 const exec = require('../lib/exec');
 
 const dockerRegistry = {
-  daily: '127.0.0.1',
-  online: '127.0.0.1'
+  daily: '127.0.0.1:5000',
+  online: '127.0.0.1:5000'
 };
 
 module.exports = (host, mode, env = 'daily') => {
