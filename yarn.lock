@@ -2587,9 +2587,9 @@ mongoose-legacy-pluralize@1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/mongoose-legacy-pluralize/download/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
 
-"mongoose-paginate@git+ssh://git@yyidan.top:10020/frank/mongoose-paginate.git":
+"mongoose-paginate@https://github.com/Maneng/mongoose-paginate.git":
   version "5.0.4"
-  resolved "git+ssh://git@yyidan.top:10020/frank/mongoose-paginate.git#7e5cff01d4c2842a4703471356c46bd119d9a9ae"
+  resolved "https://github.com/Maneng/mongoose-paginate.git#7e5cff01d4c2842a4703471356c46bd119d9a9ae"
 
 mongoose@^5.3.2:
   version "5.3.10"
