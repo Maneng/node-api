@@ -15,8 +15,8 @@ let redisClient = null
 
 const connectRedis = () => {
 
-	redisClient = redis.createClient({ detect_buffers: true })
-	exports.redis = redis.createClient({ detect_buffers: true })
+	redisClient = redis.createClient({ host: '47.97.102.250', port: 6379 });
+	exports.redis = redis.createClient({ host: '47.97.102.250', port: 6379 });
 
 	redisClient.on('error', err => {
 		redisAvailable = false
