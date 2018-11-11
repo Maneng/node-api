@@ -1,7 +1,7 @@
 
 
 node-api:
-  image: 47.97.102.250:5000/node-api:latest
+  image: 127.0.0.1:5000/node-api:latest
   container_name: node-api
   restart: always
   ports:

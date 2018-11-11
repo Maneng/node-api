@@ -9,6 +9,6 @@ RUN yarn --verbose
 COPY ./ ./
 RUN rm -rf ./config/*
 
-EXPOSE 8080
+EXPOSE 8000
 
 CMD NODE_ENV=production node --harmony index.js
