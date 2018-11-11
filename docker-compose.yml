@@ -8,3 +8,4 @@ node-api:
     - 8000:8000
   volumes:
     - /etc/localtime:/etc/localtime:ro
+    - ../config/app.config.js:/workspace/app.config.js
